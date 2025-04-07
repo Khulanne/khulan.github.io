@@ -4,16 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bayasaa Slam Dunk Arena</title>
+  <title>Bayasaa's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body onload="document.getElementById('greetingAudio').play();">
+  <audio id="greetingAudio" autoplay>
+    <source src="audio/greeting.mp3" type="audio/mp3">
+  </audio>
+
   <header>
-    <div class="avatar" onclick="openLinkedIn()">
-      <img src="avatar.png" alt="Bayasaa Avatar"/>
+    <div class="avatar-container">
+      <a href="https://www.linkedin.com/in/bayarbayasgalan" target="_blank">
+        <img src="avatar.png" alt="Bayasaa Avatar" class="avatar"/>
+        <span class="click-indicator">Click</span>
+      </a>
     </div>
-    <audio id="greetingAudio" src="audio/greeting.mp3"></audio>
-    <h1>Bayasaa Slam Dunk Arena</h1>
+    <h1>Bayarbayasgalan Bayarkhuu</h1>
+    <h3>Database Administrator | Data Professional</h3>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -23,42 +30,34 @@
   </header>
 
   <section id="home">
-    <h2>Welcome to my court!</h2>
-  </section>
-
-  <section id="game">
-    <h2>Game Mode</h2>
-    <img src="img/net.gif" class="gif" />
-    <img src="img/lebron_pose.gif" class="gif" />
+    <h2>Welcome</h2>
+    <p>Experienced IT professional passionate about data integrity, automation, and system optimization.</p>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Database Admin. Basketball Lover. Lakers Fan.</p>
-    <img src="img/lakers_hate.gif" class="gif" />
+    <p>I have over 9 years of experience working with SQL Server, Oracle, and automation tools across the banking and IT sectors. Currently based in Australia, I focus on delivering secure, reliable, and high-performing database systems.</p>
+    <img src="img/net.gif" class="gif-small" alt="Basketball Net"/>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <p>Coming Soon!</p>
+    <ul>
+      <li>PowerShell UAT database restoration automation</li>
+      <li>Oracle Active-Active Cluster Implementation</li>
+      <li>ERP and DMS system deployment</li>
+    </ul>
   </section>
 
   <section id="resume">
     <h2>Resume</h2>
-    <a href="Bayasaa_Resume.pdf" target="_blank">View Resume</a>
+    <a href="Bayasaa_Resume.pdf" target="_blank">Download my resume (PDF)</a>
+    <img src="img/spin_ball.gif" class="gif-small" alt="Spinning Ball"/>
   </section>
 
   <footer>
-    <img src="img/trophy.gif" class="footer-gif" />
-    <img src="img/spin_ball.gif" class="footer-gif" />
-    <p>&copy; Bayasaa's Slam Dunk Arena</p>
+    <img src="img/trophy.gif" class="gif-small" alt="Trophy"/>
+    <p>&copy; 2025 Bayasaa's Portfolio</p>
   </footer>
-
-  <script>
-    function openLinkedIn() {
-      document.getElementById('greetingAudio').play();
-      window.open("https://www.linkedin.com/in/bayarbayasgalan", "_blank");
-    }
-  </script>
 </body>
 </html>
