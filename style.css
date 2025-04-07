@@ -1,15 +1,15 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background: linear-gradient(to bottom, #0f0f0f, #2c2c3a);
+  color: #f0f0f0;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 header {
-  background-color: #222;
-  color: white;
+  background-color: #111;
+  color: #fff;
   padding: 20px;
 }
 nav a {
@@ -45,7 +45,7 @@ section {
   margin: 10px auto;
 }
 footer {
-  background: #222;
+  background: #111;
   color: white;
   padding: 20px;
 }
