@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bayasaa Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bayasaa's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -13,24 +14,32 @@
     <source src="assets/audio/welcome.mp3" type="audio/mpeg">
   </audio>
 
-  <section id="home">
-    <h1>Hi, I'm Bayasaa 👨‍💻</h1>
-    <p><span id="typing"></span></p>
-  </section>
+  <header>
+    <h1 id="typing-text"></h1>
+    <button onclick="toggleLanguage()">🌐 EN / MN</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#game">Game</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Experienced Database Administrator & Cloud Enthusiast</p>
+    <h2>About</h2>
+    <p id="about-text">I’m a Database Administrator and Cloud Engineer with 9+ years of experience.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="card">Coming Soon</div>
+    <div class="card">Project showcase coming soon...</div>
   </section>
 
   <section id="resume">
     <h2>Resume</h2>
-    <div class="card">Downloadable resume coming soon</div>
+    <a class="card" href="assets/Bayasaas_Resume.pdf" target="_blank">Download Resume (PDF)</a>
   </section>
 
   <section id="game">
@@ -38,8 +47,14 @@
     <iframe src="games/basketball.html" width="100%" height="400px" style="border:none;"></iframe>
   </section>
 
-  <footer>
-    <p>Connect with me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-  </footer>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bayasaa@example.com">bayasaa@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com" target="_blank">Bayasaa's LinkedIn</a></p>
+  </section>
+
+  <img src="assets/images/avatar.png" id="avatar" onclick="window.open('https://linkedin.com','_blank')" />
+
+  <footer>© 2025 Bayasaa. All rights reserved.</footer>
 </body>
 </html>

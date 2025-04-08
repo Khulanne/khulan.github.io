@@ -1,13 +1,38 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-  const text = "Welcome to my interactive portfolio.";
+let lang = "en";
+
+const texts = {
+  en: {
+    typing: "Hi, I'm Bayasaa 👨‍💻",
+    about: "I’m a Database Administrator and Cloud Engineer with 9+ years of experience."
+  },
+  mn: {
+    typing: "Сайн байна уу, би Баясаа 👨‍💻",
+    about: "Би 9+ жилийн туршлагатай өгөгдлийн сангийн мэргэжилтэн, клоуд инженер."
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  typeText(texts[lang].typing);
+  document.getElementById("about-text").innerText = texts[lang].about;
+});
+
+function typeText(text) {
   let i = 0;
-  function typing() {
+  const target = document.getElementById("typing-text");
+  target.innerText = "";
+  function type() {
     if (i < text.length) {
-      document.getElementById("typing").textContent += text.charAt(i);
+      target.innerText += text.charAt(i);
       i++;
-      setTimeout(typing, 50);
+      setTimeout(type, 50);
     }
   }
-  typing();
-});
+  type();
+}
+
+function toggleLanguage() {
+  lang = lang === "en" ? "mn" : "en";
+  typeText(texts[lang].typing);
+  document.getElementById("about-text").innerText = texts[lang].about;
+}
