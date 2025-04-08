@@ -3,18 +3,15 @@ let lang = "en";
 
 const texts = {
   en: {
-    typing: "Hi, I'm Bayasaa 👨‍💻",
-    about: "I’m a Database Administrator and Cloud Engineer with 9+ years of experience."
+    typing: "Hi, I'm Bayasaa 👨‍💻"
   },
   mn: {
-    typing: "Сайн байна уу, би Баясаа 👨‍💻",
-    about: "Би 9+ жилийн туршлагатай өгөгдлийн сангийн мэргэжилтэн, клоуд инженер."
+    typing: "Сайн байна уу, би Баясаа 👨‍💻"
   }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   typeText(texts[lang].typing);
-  document.getElementById("about-text").innerText = texts[lang].about;
 });
 
 function typeText(text) {
@@ -34,5 +31,4 @@ function typeText(text) {
 function toggleLanguage() {
   lang = lang === "en" ? "mn" : "en";
   typeText(texts[lang].typing);
-  document.getElementById("about-text").innerText = texts[lang].about;
 }
