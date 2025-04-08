@@ -85,3 +85,84 @@ footer {
   background: #161b22;
   margin-top: 3rem;
 }
+
+.card:hover, nav a:hover, button:hover {
+  box-shadow: 0 0 10px #4fc3f7, 0 0 20px #4fc3f7;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.card:active, nav a:active, button:active {
+  animation: pulse 0.6s;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px #4fc3f7; }
+  50% { box-shadow: 0 0 25px #4fc3f7; }
+  100% { box-shadow: 0 0 10px #4fc3f7; }
+}
+
+#click-label {
+  position: fixed;
+  bottom: 4px;
+  right: 20px;
+  font-size: 12px;
+  color: #58a6ff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Animated moving lights */
+@keyframes glowing {
+  0% { box-shadow: 0 0 10px #4fc3f7; }
+  50% { box-shadow: 0 0 30px #4fc3f7; }
+  100% { box-shadow: 0 0 10px #4fc3f7; }
+}
+
+.card:hover, nav a:hover, button:hover {
+  animation: glowing 1.2s infinite ease-in-out;
+}
+
+
+#resume .card {
+  margin-bottom: 100px;
+}
+
+
+#avatar-top {
+  width: 100px;
+  border-radius: 50%;
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+  border: 2px solid #58a6ff;
+  box-shadow: 0 0 15px #4fc3f7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#avatar-top:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px #4fc3f7;
+}
+
+/* Stronger glowing animation on all active UI */
+@keyframes intense-glow {
+  0% { box-shadow: 0 0 10px #4fc3f7; }
+  50% { box-shadow: 0 0 40px #4fc3f7; }
+  100% { box-shadow: 0 0 10px #4fc3f7; }
+}
+.card:hover, nav a:hover, button:hover {
+  animation: intense-glow 1.2s infinite ease-in-out;
+}
+
+/* Extra spacing above resume card */
+#resume h2 {
+  margin-bottom: 40px;
+}
+
+/* Enhanced light movement */
+@keyframes glowing {
+  0% { box-shadow: 0 0 10px #4fc3f7; }
+  25% { box-shadow: 0 0 20px #00d4ff; }
+  50% { box-shadow: 0 0 35px #00d4ff; }
+  75% { box-shadow: 0 0 20px #00d4ff; }
+  100% { box-shadow: 0 0 10px #4fc3f7; }
+}

@@ -3,10 +3,10 @@ let lang = "en";
 
 const texts = {
   en: {
-    typing: "Hi, I'm Bayasaa 👨‍💻"
+    typing: "Hi, I'm Bayasaa"
   },
   mn: {
-    typing: "Сайн байна уу, би Баясаа 👨‍💻"
+    typing: "Сайн байна уу, би Баясаа"
   }
 };
 
